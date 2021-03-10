@@ -68,7 +68,7 @@ class _HomeState extends State<Home> {
 
   Future<void> news() async {
     final newsresult =
-        await newsapi("0e52bd85a332469199a161a6876ae8ef", http.Client());
+        await newsapi("api key here", http.Client());
     print(newsresult);
     Scaffold.of(context).showSnackBar(SnackBar(
       content: Text("found ${newsresult["totalResults"]} articles"),
